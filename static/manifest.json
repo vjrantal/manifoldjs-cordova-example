@@ -1,0 +1,6 @@
+{
+  "name": "ManifoldJS Cordova Example",
+  "short_name": "Example",
+  "scope": "/",
+  "start_url": "http://manifoldjs-cordova-example.azurewebsites.net/"
+}
