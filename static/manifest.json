@@ -2,5 +2,8 @@
   "name": "ManifoldJS Cordova Example",
   "short_name": "Example",
   "scope": "/",
-  "start_url": "http://manifoldjs-cordova-example.azurewebsites.net/"
+  "start_url": "http://manifoldjs-cordova-example.azurewebsites.net/",
+  "mjs_access_whitelist": [
+    { "url": "cdvfile://*" }
+  ]
 }

@@ -3,8 +3,11 @@
 	<head>
 		<title>ManifoldJS Cordova Example</title>
 		<link rel="manifest" href="manifest.json">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' cdvfile: gap:">
+		<script src="index.js"></script>
 	</head>
 	<body>
 		<h1>ManifoldJS Cordova Example</h1>
+		<p id="content"></p>
 	</body>
 </html>
