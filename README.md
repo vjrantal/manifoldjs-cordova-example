@@ -16,17 +16,15 @@ that depends on functionality available as a Cordova plugin.
 
 ## Limitations
 
-### Doesn't work with secured sites on iOS 9.0
+### Doesn't work with secured sites on iOS 9.0 if built using iOS SDK 9.0
 
 This approach doesn't work on iOS 9.0 if your Web site needs to be accessed over secure
-connection (i.e., using the https scheme). This is because iOS 9.0 doesn't seem to allow
-"mixed content" where the site origin is "secured", but some connections would not be.
+connection (i.e., using the https scheme) and is built with the 9.0 SDK. This is because
+then, iOS 9.0 doesn't seem to allow "mixed content" where the site origin is "secured",
+but some connections would not be.
 
-This could be potentially worked around, but no solution yet found.
-
-Here http://stackoverflow.com/a/32618889 it was suggested that it would be impossible to
-get rid of this restriction, but our case is a little bit unique since it deals with custom
-URI scheme rather than insecure HTTP connection.
+A workaround is to build using an older SDK. It was tested that when building with Xcode 6.4
+using iOS SDK 8.4, the resulting app worked on iOS 9.0 as well.
 
 ### Additional step required for iOS 9.0 onwards for insecured sites
 
